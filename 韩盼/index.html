@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <ul>
+                <li>〈</li>
+                <li>我的</li>
+                <li></li>
+            </ul>
+        </header>
+       
+        <section>
+            <ul id="menu">
+                <router-link to="hot" tag="li">热门</router-link>
+                <router-link to="fl" tag="li">分类</router-link>
+                <router-link to="jp" tag="li">精品</router-link>
+                <router-link to="zb" tag="li">直播</router-link>
+                <router-link to="gb" tag="li">广播</router-link>
+            </ul>
+
+
+        </section>
+
+
+        <router-view></router-view>
+         <footer>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

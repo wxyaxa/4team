@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        ol,
+        dl,
+        dd,
+        textarea,
+        button {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li,
+        dl,
+        dt,
+        dd,
+        a,
+        textarea,
+        input,
+        button,
+        span,
+        em,
+        strong,
+        img,
+        div {
+            -webkit-touch-callout: none;
+            -moz-touch-callout: none;
+            -ms-touch-callout: none;
+            touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            -moz-tap-highlight-color: transparent;
+            -ms-tap-highlight-color: transparent;
+            tap-highlight-color: transparent;
+        }
+        
+        input[type=text],
+        input[type=button],
+        input[type=password],
+        input[type=telphone],
+        input[type=search],
+        textarea,
+        button {
+            outline: 0 none;
+            -webkit-appearance: none;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        
+        img {
+            border: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        html {
+            font-size: 62.5%;
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        /*# sourceMappingURL=reset.css.map */
+        
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            line-height: 40px;
+        }
+        
+        .header p {
+            flex: 1;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .section {
+            width: 100%;
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            display: flex;
+            position: fixed;
+            bottom: 0;
+        }
+        
+        .footer p {
+            flex: 1;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="boy">
+            <div class="header">
+                <p>
+                    <router-link to='remen'>热门</router-link>
+                </p>
+                <p>
+                    <router-link to='fenlei'>分类</router-link>
+                </p>
+                <p>
+                    <router-link to='jingpin'>精品</router-link>
+                </p>
+                <p>
+                    <router-link to='zhibo'>直播</router-link>
+                </p>
+                <p>
+                    <router-link to='guangbo'>广播</router-link>
+                </p>
+            </div>
+            <div class="section">
+
+                <router-view></router-view>
+            </div>
+            <div class="footer">
+                <p>
+                    <router-link to='shoye'>首页</router-link>
+                </p>
+                <p>
+                    <router-link to='qita'>其他</router-link>
+                </p>
+                <p>
+                    <router-link to='wode'>我的</router-link>
+                </p>
+                <p>
+                    <router-link to='faxian'>发现</router-link>
+                </p>
+                <p>
+                    <router-link to='weidenglu'>未登录</router-link>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="section">
+
+		</div>
+		<router-view></router-view></div> -->
+</body>
+
+</html>

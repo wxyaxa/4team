@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+<style>
+	.active{
+		color: red;
+	}
+</style>
+<script>
+    var html = document.documentElement;
+    html.style.fontSize = html.clientWidth/316*100+"px";
+</script>
+<body>
+    <div class="wrap" id="app">
+        <header class="header">
+ 			<h1>头部</h1>
+        </header>
+        <div class="content">
+
+			<router-view></router-view>
+        </div>
+        <footer class="footer">
+			<ul>
+				<router-link to='home' tag='li'><i class='iconfont icon-homepage'></i><small>首页</small></router-link>
+				<router-link to='me' tag='li'><i class='iconfont icon-homepage'></i><small>我的</small></router-link>
+				<router-link to='find' tag='li'><i class='iconfont icon-homepage'></i><small>发现</small></router-link>
+				<router-link to='login' tag='li'><i class='iconfont icon-homepage'></i><small>未登录</small></router-link>
+			</ul>
+
+        </footer>
+    </div>
+</body>
+
+<script>
+
+</script>
+</html>
